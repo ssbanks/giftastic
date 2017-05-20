@@ -1,13 +1,13 @@
-// create an array of shows - in this case, awesome 90's tv shows
+// create an array of movies
 var movies = ["Anchorman", "Stepbrothers", "Napoleon Dynamite", "Talledega Nights", "Sharknado"];
 
 // creates buttons for each of these
 function makeButtons(){ 
-	// deletes the shows prior to adding new shows so there are no repeat buttons
+	// deletes the shows prior to adding new movies so there are no repeat buttons
 	$('#buttonsView').empty();
 	// loops through the shows array
 	for (var i = 0; i < movies.length; i++){
-		// dynamically makes buttons for every show in the array
+		// dynamically makes buttons for every movie in the array
 		var a = $('<button>') 
 		a.addClass('movie'); // add a class
 		a.attr('data-name', movies[i]); // add a data-attribute
@@ -65,7 +65,7 @@ function displayGifs(){
 
 					$("#gifsView").prepend(gifDiv);
 				}
-			}
+		}
 			
 		});
 }
